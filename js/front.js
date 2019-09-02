@@ -24,6 +24,26 @@
         }
     }, 500); // check every 100ms
     
+	$( ".woocommerce-product-gallery" ).on( "wc-product-gallery-after-init", function() {
+        $('.wc-loader-icon').fadeOut();
+        blurElement(this, 0, 0.5);
+	});
+	
+	function blurElement(element, size, delay) {
+		var filterVal = 'blur(' + size + 'px)';
+		$(element).css({
+			'filter':filterVal,
+			'webkitFilter':filterVal,
+			'mozFilter':filterVal,
+			'oFilter':filterVal,
+			'msFilter':filterVal,
+			'transition':'all ' + delay + 's ease-in-out',
+			'-webkit-transition':'all ' + delay + 's ease-in-out',
+			'-moz-transition':'all ' + delay + 's ease-in-out',
+			'-o-transition':'all ' + delay + 's ease-in-out'
+		});
+	}
+   
 	
 })( jQuery );
 
