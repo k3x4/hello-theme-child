@@ -14,8 +14,11 @@ Tags:           flexible-header, custom-colors, custom-menu, custom-logo, editor
     Add your custom styles here
 */
 
+.mb-0{
+    margin-bottom: 0 !important;
+}
+
 /* Add new CSS for 5 columns */
- 
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
     width: 18.4%;
     margin-right: 2%;
