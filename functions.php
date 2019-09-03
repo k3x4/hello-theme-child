@@ -15,10 +15,9 @@ add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts' );
 /********************************* */
 
 add_action( 'wp_enqueue_scripts', function(){
-    wp_enqueue_script( 'child-theme-front', get_stylesheet_directory_uri() . '/js/front.js', ['jquery'], false, true );
+    // wp_enqueue_script( 'child-theme-front', get_stylesheet_directory_uri() . '/js/front.js', ['jquery'], false, true );
+    
+    
     // wp_enqueue_script( 'child-theme-woo', get_stylesheet_directory_uri() . '/js/woo.js', ['jquery', 'wc-single-product'], false, true );
     // wp_enqueue_style( 'child-theme-flex-css', get_stylesheet_directory_uri() . '/css/flexslider.min.css');
 } );
-
-require_once(__DIR__ . '/inc/woocommerce/single-product-gallery.php');
-require_once(__DIR__ . '/inc/woocommerce/single-product-tabs.php');
