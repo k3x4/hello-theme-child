@@ -28,3 +28,7 @@ Tags:           flexible-header, custom-colors, custom-menu, custom-logo, editor
 .woocommerce div.product form.cart .single_add_to_cart_button{
     margin-right: 10px;
 }
+
+.elementor-add-to-cart a.added_to_cart{
+    font-weight: 500;
+}
