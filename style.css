@@ -17,3 +17,14 @@ Tags:           flexible-header, custom-colors, custom-menu, custom-logo, editor
 .mb-0{
     margin-bottom: 0 !important;
 }
+
+.woocommerce #respond input#submit.loading::after,
+.woocommerce a.button.loading::after,
+.woocommerce button.button.loading::after,
+.woocommerce input.button.loading::after{
+    top: auto;
+}
+
+.woocommerce div.product form.cart .single_add_to_cart_button{
+    margin-right: 10px;
+}
