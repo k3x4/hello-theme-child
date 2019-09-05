@@ -35,10 +35,10 @@ Tags:           flexible-header, custom-colors, custom-menu, custom-logo, editor
 
 /********* CART ***************************************/
 
-.woocommerce .quantity .qty {
+/* .woocommerce .quantity .qty {
     width: 100%;
     max-width: 60px;
-}
+} */
 
 .woocommerce #respond input#submit,
 .woocommerce a.button,
@@ -52,7 +52,7 @@ Tags:           flexible-header, custom-colors, custom-menu, custom-logo, editor
     border: 1px solid #ddd;
 }
 
-.woocommerce #respond input#submit.alt,
+/* .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
@@ -64,7 +64,7 @@ Tags:           flexible-header, custom-colors, custom-menu, custom-logo, editor
 .woocommerce button.button.alt:hover,
 .woocommerce input.button.alt:hover {
     background-color: #444;
-}
+} */
 
 .woocommerce table.shop_table {
     border: none;
@@ -133,6 +133,44 @@ table tbody>tr:nth-child(odd)>th {
 table tbody tr:hover>td,
 table tbody tr:hover>th {
     background-color: unset;
+}
+
+table tfoot th,table thead th {
+    font-size: 16px;
+}
+
+.cart_totals h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    padding: 15px 20px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.woocommerce.woo-cart-coupons button.button {
+    display: block;
+    width: 100%;
+}
+
+.woocommerce.woo-cart-coupons input,
+.woocommerce.woo-cart-coupons label {
+    margin-bottom: 1em;
+}
+
+.woocommerce.woo-cart-coupons input{
+    padding: 10px 15px;
+}
+
+.woocommerce.woo-cart-coupons label{
+    font-weight: 700;
+}
+
+.woocommerce.woo-cart-coupons .fa,
+.woocommerce.woo-cart-coupons .fas{
+    vertical-align: top;
+    color: #bbb;
+    margin-right: 5px;
 }
 
 /* -- quantity box -- */
