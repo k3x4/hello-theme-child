@@ -173,6 +173,14 @@ table tfoot th,table thead th {
     margin-right: 5px;
 }
 
+.woocommerce-cart table.cart .product-thumbnail{
+    padding: 0;
+}
+
+.woocommerce-cart table.cart img{
+    width: 100px;
+}
+
 /* -- quantity box -- */
 
 .quantity {
