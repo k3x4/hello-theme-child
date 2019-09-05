@@ -32,3 +32,175 @@ Tags:           flexible-header, custom-colors, custom-menu, custom-logo, editor
 .elementor-add-to-cart a.added_to_cart{
     font-weight: 500;
 }
+
+/********* CART ***************************************/
+
+.woocommerce .quantity .qty {
+    width: 100%;
+    max-width: 60px;
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px 15px;
+    border-radius: 0;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    background-color: #000;
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+    background-color: #444;
+}
+
+.woocommerce table.shop_table {
+    border: none;
+    border-collapse: unset;
+}
+
+.woocommerce table.shop_table th {
+    padding: 15px 20px;
+}
+
+.woocommerce table.shop_table td {
+    border-top: none;
+    padding: 15px 20px;
+}
+
+#add_payment_method table.cart td.actions .coupon .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-checkout table.cart td.actions .coupon .input-text {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    min-width: 150px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-size: 14px;
+}
+
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+select,
+textarea {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    padding: 10px 5px;
+}
+
+table td,
+table th {
+    border: none;
+}
+
+table caption+thead tr:first-child td,
+table caption+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table thead:first-child tr:first-child td,
+table thead:first-child tr:first-child th {
+    border-top: none;
+    border-bottom: 1px solid #eee;
+}
+
+table tbody>tr:nth-child(odd)>td,
+table tbody>tr:nth-child(odd)>th {
+    background-color: unset;
+}
+
+table tbody tr:hover>td,
+table tbody tr:hover>th {
+    background-color: unset;
+}
+
+/* -- quantity box -- */
+
+.quantity {
+    opacity: 1;
+    display: inline-block;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 1em;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+
+.quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+    cursor: pointer;
+    padding: 0 5px;
+    width: 20px;
+    height: 39px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+}
+
+.quantity.buttons_added .minus {
+    border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+    border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+    background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+    outline: none;
+}
